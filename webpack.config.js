@@ -15,6 +15,8 @@ module.exports = {
 
 		'polyfills': './resources/assets/src/polyfills.ts',
 
+		'vendor': './resources/assets/src/vendor.ts',
+
 		'app': './resources/assets/src/main.ts'
 	},
 
@@ -77,7 +79,9 @@ module.exports = {
 
 	    new webpack.optimize.CommonsChunkPlugin({
 	      name: ['app', 'vendor','polyfills']
-	    })
+	    }),
+
+	    new webpack.optimize.UglifyJsPlugin({ output: {comments: false} })
 	    // ,
 
 	    // new HtmlWebpackPlugin({

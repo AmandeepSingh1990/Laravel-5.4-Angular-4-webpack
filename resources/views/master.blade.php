@@ -10,6 +10,8 @@
 </head>
 <body>
   <app-root></app-root>
-  <script type="text/javascript" src="{{url('dist')}}/polyfills.js"></script><script type="text/javascript" src="{{url('dist')}}/app.js"></script>
+  <script type="text/javascript" src="{{url('dist')}}/vendor.js"></script>
+  <script type="text/javascript" src="{{url('dist')}}/polyfills.js"></script>
+  <script type="text/javascript" src="{{url('dist')}}/app.js"></script>
 </body>
 </html>
